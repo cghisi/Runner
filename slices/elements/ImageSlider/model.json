@@ -1,0 +1,100 @@
+{
+  "id": "image_slider",
+  "type": "SharedSlice",
+  "name": "ImageSlider",
+  "description": "ImageSlider",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "ImageSlider",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading1",
+            "label": "Title",
+            "placeholder": "This is where it all begins..."
+          }
+        },
+        "description": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading3"
+          },
+          "type": "StructuredText"
+        },
+        "size": {
+          "type": "Select",
+          "config": {
+            "label": "",
+            "id": "size",
+            "placeholder": "",
+            "default_value": "",
+            "options": [
+              "",
+              ""
+            ]
+          }
+        },
+        "ctaCaption": {
+          "type": "Text",
+          "config": {
+            "label": "",
+            "id": "ctaCaption",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "image": {
+          "config": {
+            "label": "",
+            "constraint": {
+              "width": 600,
+              "height": 300
+            },
+            "thumbnails": [
+              {
+                "name": "mobile",
+                "width": 300,
+                "height": 150
+              }
+            ]
+          },
+          "type": "Image"
+        },
+        "title": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading3"
+          },
+          "type": "StructuredText"
+        },
+        "description": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          },
+          "type": "StructuredText"
+        },
+        "ctaCaption": {
+          "type": "Text",
+          "config": {
+            "label": "",
+            "id": "ctaCaption",
+            "placeholder": ""
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+[
+    {
+        "id": "default-slice",
+        "name": "Default slice",
+        "docURL": "...",
+        "version": "sktwi1xtmkfgx8626",
+        "description": "ImageSlider",
+        "primary": {
+            "title": [
+                {
+                    "type": "heading1",
+                    "text": "orchestrate open-source solutions",
+                    "spans": []
+                }
+            ],
+            "description": [
+                {
+                    "type": "heading4",
+                    "text": "syndicate scalable platforms",
+                    "spans": []
+                }
+            ],
+            "size": "",
+            "ctaCaption": "Read More"
+        },
+        "items": [
+            {
+                "image": {
+                    "dimensions": {
+                        "width": 600,
+                        "height": 300
+                    },
+                    "alt": "Placeholder image",
+                    "copyright": null,
+                    "url": "https://images.prismic.io/important-sm-images/fcad8474-a4b4-40f9-a34c-ab36ceb59593__fC4opfkUz8.jpg?w=600&h=300&fit=crop",
+                    "mobile": {
+                        "dimensions": {
+                            "width": 300,
+                            "height": 150
+                        },
+                        "alt": "Placeholder image",
+                        "copyright": null,
+                        "url": "https://images.prismic.io/important-sm-images/5782503d-59e4-4a8a-bc4f-0388ee5b7a3d_Nhm0Uj5U7wc.jpg?w=300&h=150&fit=crop"
+                    }
+                },
+                "title": [
+                    {
+                        "type": "heading4",
+                        "text": "repurpose wireless markets",
+                        "spans": []
+                    }
+                ],
+                "description": [
+                    {
+                        "type": "paragraph",
+                        "text": "Magna commodo ad laboris dolore duis do cupidatat pariatur magna",
+                        "spans": []
+                    }
+                ],
+                "ctaCaption": "Read More"
+            },
+            {
+                "image": {
+                    "dimensions": {
+                        "width": 600,
+                        "height": 300
+                    },
+                    "alt": "Placeholder image",
+                    "copyright": null,
+                    "url": "https://images.prismic.io/important-sm-images/90501dd7-8c50-43d4-a20a-f001a60e6ac1_j_HYcjKUZrk.jpg?w=600&h=300&fit=crop",
+                    "mobile": {
+                        "dimensions": {
+                            "width": 300,
+                            "height": 150
+                        },
+                        "alt": "Placeholder image",
+                        "copyright": null,
+                        "url": "https://images.prismic.io/important-sm-images/15c70ce3-fa6c-4951-8ce9-269d6e8263b2_1-dAxyaDXf8.jpg?w=300&h=150&fit=crop"
+                    }
+                },
+                "title": [
+                    {
+                        "type": "heading4",
+                        "text": "benchmark proactive experiences",
+                        "spans": []
+                    }
+                ],
+                "description": [
+                    {
+                        "type": "paragraph",
+                        "text": "Magna commodo ad laboris dolore duis do cupidatat pariatur magna",
+                        "spans": []
+                    }
+                ],
+                "ctaCaption": "Read More"
+            },
+            {
+                "image": {
+                    "dimensions": {
+                        "width": 600,
+                        "height": 300
+                    },
+                    "alt": "Placeholder image",
+                    "copyright": null,
+                    "url": "https://images.prismic.io/important-sm-images/4dde2a84-3496-49d9-a176-9a6ad245b147_7yCUmPAZrhc.jpg?w=600&h=300&fit=crop",
+                    "mobile": {
+                        "dimensions": {
+                            "width": 300,
+                            "height": 150
+                        },
+                        "alt": "Placeholder image",
+                        "copyright": null,
+                        "url": "https://images.prismic.io/important-sm-images/ef9ad315-8fee-4074-aab6-e12970a1644c_yNB8niq1qCk.jpg?w=300&h=150&fit=crop"
+                    }
+                },
+                "title": [
+                    {
+                        "type": "heading4",
+                        "text": "scale user-centric solutions",
+                        "spans": []
+                    }
+                ],
+                "description": [
+                    {
+                        "type": "paragraph",
+                        "text": "Magna commodo ad laboris dolore duis do cupidatat pariatur magna",
+                        "spans": []
+                    }
+                ],
+                "ctaCaption": "Read More"
+            },
+            {
+                "image": {
+                    "dimensions": {
+                        "width": 600,
+                        "height": 300
+                    },
+                    "alt": "Placeholder image",
+                    "copyright": null,
+                    "url": "https://images.prismic.io/important-sm-images/679c89df-30db-490c-a287-f66348ac8d71_BocBGm1zoOw.jpg?w=600&h=300&fit=crop",
+                    "mobile": {
+                        "dimensions": {
+                            "width": 300,
+                            "height": 150
+                        },
+                        "alt": "Placeholder image",
+                        "copyright": null,
+                        "url": "https://images.prismic.io/important-sm-images/dc35ef90-3f97-49a5-a22a-3fb86373dfef_Ka9WMJqV8E8.jpg?w=300&h=150&fit=crop"
+                    }
+                },
+                "title": [
+                    {
+                        "type": "heading4",
+                        "text": "facilitate synergistic partnerships",
+                        "spans": []
+                    }
+                ],
+                "description": [
+                    {
+                        "type": "paragraph",
+                        "text": "Magna commodo ad laboris dolore duis do cupidatat pariatur magna",
+                        "spans": []
+                    }
+                ],
+                "ctaCaption": "Read More"
+            },
+            {
+                "image": {
+                    "dimensions": {
+                        "width": 600,
+                        "height": 300
+                    },
+                    "alt": "Placeholder image",
+                    "copyright": null,
+                    "url": "https://images.prismic.io/important-sm-images/5f387305-9347-4f59-ab1a-e611a77a65a3_lnWytzi3f8g.jpg?w=600&h=300&fit=crop",
+                    "mobile": {
+                        "dimensions": {
+                            "width": 300,
+                            "height": 150
+                        },
+                        "alt": "Placeholder image",
+                        "copyright": null,
+                        "url": "https://images.prismic.io/important-sm-images/0c1acf72-dbfa-442a-8a64-ab8c84d41263_jZ4rJ0yLyrs.jpg?w=300&h=150&fit=crop"
+                    }
+                },
+                "title": [
+                    {
+                        "type": "heading4",
+                        "text": "orchestrate open-source relationships",
+                        "spans": []
+                    }
+                ],
+                "description": [
+                    {
+                        "type": "paragraph",
+                        "text": "Laborum nulla aute irure nisi in excepteur sit non exercitation ad.",
+                        "spans": []
+                    }
+                ],
+                "ctaCaption": "Read More"
+            }
+        ],
+        "slice_type": "image_slider"
+    }
+]

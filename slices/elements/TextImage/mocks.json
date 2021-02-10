@@ -1,0 +1,42 @@
+[
+    {
+        "id": "default-slice",
+        "name": "Default slice",
+        "docURL": "...",
+        "version": "sktwi1xtmkfgx8626",
+        "description": "TextImage",
+        "primary": {
+            "title": [
+                {
+                    "type": "heading1",
+                    "text": "embrace plug-and-play e-tailers",
+                    "spans": []
+                }
+            ],
+            "description": [
+                {
+                    "type": "paragraph",
+                    "text": "Duis laborum do elit. Incididunt cupidatat exercitation exercitation voluptate consectetur adipisicing qui duis.\nNostrud aute amet cillum tempor laborum.\nVeniam pariatur reprehenderit ad elit consectetur cupidatat sit pariatur laborum non. Culpa in nulla laborum ex. Duis pariatur veniam excepteur in ex laborum enim incididunt pariatur non ut ad enim in aute.",
+                    "spans": []
+                }
+            ],
+            "image": {
+                "dimensions": {
+                    "width": 450,
+                    "height": 600
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.prismic.io/important-sm-images/e6aa48f6-f5b3-43b9-af72-a0e950297976_OxsU3hHvG90.jpg?w=450&h=600&fit=crop"
+            },
+            "position": "Left",
+            "ctaLabel": "Call To Action",
+            "ctaLink": {
+                "link_type": "Web",
+                "url": "https://slicemachine.dev"
+            }
+        },
+        "items": [],
+        "slice_type": "text_image"
+    }
+]
