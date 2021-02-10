@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import { array, shape, PropTypes } from "prop-types";
+import {PropTypes } from "prop-types";
 import Slider from "react-slick";
 import Image from "next/image";
 
 import { Button } from "../../components/Button";
 
-import Right from "../../assets/right.png";
-import Left from "../../assets/left.png";
+import Right from "../assets/right.png";
+import Left from "../assets/left.png";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

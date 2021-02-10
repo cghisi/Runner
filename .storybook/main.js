@@ -2,8 +2,8 @@ var webpack = require("webpack");
 
 module.exports = {
   stories: [
-    "../slices/elements/**/*.stories.[tj]s",
-    "../slices/components/**/*.stories.[tj]s",
+    "../slices/**/*.stories.[tj]s",
+    "../components/**/*.stories.[tj]s",
   ],
   addons: ["@storybook/addon-links", "@storybook/addon-essentials"],
   reactOptions: {
