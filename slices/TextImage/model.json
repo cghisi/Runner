@@ -34,7 +34,13 @@
               "width": 450,
               "height": 600
             },
-            "thumbnails": []
+            "thumbnails": [
+              {
+                "name": "square",
+                "width": 400,
+                "height": 400
+              }
+            ]
           },
           "type": "Image"
         },

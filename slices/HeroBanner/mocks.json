@@ -1,0 +1,42 @@
+[
+    {
+        "id": "default-slice",
+        "name": "Default slice",
+        "docURL": "...",
+        "version": "sktwi1xtmkfgx8626",
+        "description": "HeroBanner",
+        "primary": {
+            "title": [
+                {
+                    "type": "heading1",
+                    "text": "e-enable sticky deliverables",
+                    "spans": []
+                }
+            ],
+            "subtitle": [
+                {
+                    "type": "heading2",
+                    "text": "redefine impactful supply-chains",
+                    "spans": []
+                }
+            ],
+            "image": {
+                "dimensions": {
+                    "width": 600,
+                    "height": 600
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.prismic.io/important-sm-images/dec29fb6-148b-4715-9f71-30b5cea3fcec_pXEskkt0tpg.jpg?w=600&h=600&fit=crop"
+            },
+            "background": "#DDE6EC",
+            "ctaLabel": "A text labelled \"\" that conveys a message",
+            "ctaLink": {
+                "link_type": "Web",
+                "url": "https://slicemachine.dev"
+            }
+        },
+        "items": [],
+        "slice_type": "hero_banner"
+    }
+]

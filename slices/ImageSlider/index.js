@@ -1,12 +1,9 @@
 import React, { Component } from "react";
-import {PropTypes } from "prop-types";
+import { PropTypes } from "prop-types";
 import Slider from "react-slick";
 import Image from "next/image";
 
 import { Button } from "../../components/Button";
-
-import Right from "../assets/right.png";
-import Left from "../assets/left.png";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -49,10 +46,20 @@ class MySlice extends Component {
             )}
             <div className="text-left py-5">
               <button onClick={this.previous} className="pr-5 inline-block">
-                <img src={Left} alt="previous arrow" />
+                <Image
+                  src="/left.png"
+                  alt="previous image"
+                  width={30}
+                  height={30}
+                />
               </button>
               <button onClick={this.next} className="pr-5 inline-block">
-                <img src={Right} alt="next arrow" />
+                <Image
+                  src="/right.png"
+                  alt="next image"
+                  width={30}
+                  height={30}
+                />
               </button>
             </div>
             {slice.primary.ctaCaption && (
@@ -90,14 +97,8 @@ class MySlice extends Component {
   }
 }
 
-MySlice.propTypes = {
-  position: PropTypes.oneOf(["2", "3", "4"]),
-  primary: PropTypes.bool,
-};
+MySlice.propTypes = {};
 
-MySlice.defaultProps = {
-  position: "4",
-  primary: true,
-};
+MySlice.defaultProps = {};
 
 export default MySlice;
