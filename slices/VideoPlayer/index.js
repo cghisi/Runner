@@ -4,10 +4,7 @@ import { RichText } from "prismic-reactjs";
 
 import ReactPlayer from "react-player";
 
-const MySlice = ({ video, slice }) => {
-  
-  const videoUrl = video;
-
+const MySlice = ({ wide, slice }) => {
   return (
     <section className="container mx-auto text-center">
       {slice.primary.title ? (
@@ -20,10 +17,17 @@ const MySlice = ({ video, slice }) => {
       ) : (
         <p>start by editing this slice from inside the SliceMachine builder!</p>
       )}
-      {slice.primary.video ? (
-        <ReactPlayer url={videoUrl} className="mx-auto" />
-      ) : (
-        <ReactPlayer url={slice.primary.video} />
+      {slice.primary.video && (
+        <div className="player-wrapper">
+          <ReactPlayer
+            url={slice.primary.video}
+            className="mx-auto react-player"
+            width="100%"
+            height="100%"
+            controls="false"
+            playing="true"
+          />
+        </div>
       )}
     </section>
   );
@@ -38,11 +42,11 @@ const MySlice = ({ video, slice }) => {
 // };
 
 MySlice.propTypes = {
-  video: PropTypes.string.isRequired,
+  wide: PropTypes.bool,
 };
 
 MySlice.defaultProps = {
-  video: "https://www.youtube.com/watch?v=2vYUkHWZeT4",
+  wide: false,
 };
 
 export default MySlice;
