@@ -26,6 +26,8 @@ const MySlice = ({ wide, slice }) => {
             height="100%"
             controls="false"
             playing="true"
+            muted="true"
+            pip="false"
           />
         </div>
       )}

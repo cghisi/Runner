@@ -1,3 +1,11 @@
-const withTM = require('next-transpile-modules')(['next-slicezone', 'essential-slices']);
+const withPlugins = require("next-compose-plugins");
+const withTM = require("next-transpile-modules")([
+  "next-slicezone",
+  "essential-slices",
+]);
 
-module.exports = withTM();
+module.exports = withPlugins([withTM], {
+  images: {
+    domains: ["images.prismic.io"],
+  },
+});

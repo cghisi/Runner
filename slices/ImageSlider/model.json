@@ -28,19 +28,6 @@
           },
           "type": "StructuredText"
         },
-        "size": {
-          "type": "Select",
-          "config": {
-            "label": "",
-            "id": "size",
-            "placeholder": "",
-            "default_value": "",
-            "options": [
-              "",
-              ""
-            ]
-          }
-        },
         "ctaCaption": {
           "type": "Text",
           "config": {

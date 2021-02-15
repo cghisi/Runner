@@ -5,10 +5,10 @@
 @layer base {
   html,
   body {
-    @apply text-sm !important;
+    @apply text-base !important;
   }
   h1 {
-    @apply text-4xl !important;
+    @apply text-6xl !important;
     margin: 0px !important;
   }
   h2 {
@@ -64,6 +64,7 @@ a {
 .player-wrapper {
   position: relative;
   padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+  border: 1px solid #dedede;
 }
 
 .react-player {

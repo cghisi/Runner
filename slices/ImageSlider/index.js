@@ -36,7 +36,7 @@ class MySlice extends Component {
     let slice = this.props.slice;
 
     return (
-      <section className="container mx-auto text-center">
+      <section className="container mx-auto text-center py-20">
         <div className="flex">
           <div className="w-1/3 m-auto">
             {slice.primary.title && (
@@ -73,19 +73,25 @@ class MySlice extends Component {
               <Slider ref={(c) => (this.slider = c)} {...settings}>
                 {slice.items.map((item, index) => (
                   <div key={index} className="px-2 text-left">
-                    <Image
-                      src={item.image.url}
-                      height={300}
-                      width={500}
-                      alt={item.image.alt}
-                    />
+                    {item.image && (
+                      <Image
+                        src={item.image.url}
+                        height={item.image.dimensions.height}
+                        width={item.image.dimensions.width}
+                        alt={item.image.alt}
+                      />
+                    )}
                     <div className="underline pb-5">
                       <RichText render={item.title} />
                     </div>
-                    <RichText render={item.description} />
-                    <div className="text-left py-5">
-                      <Button size="small" label={item.ctaCaption} />
-                    </div>
+                    {item.description && (
+                      <RichText render={item.description} />
+                    )}
+                    {item.ctaCaption && (
+                      <div className="text-left py-5">
+                        <Button size="small" label={item.ctaCaption} />
+                      </div>
+                    )}
                   </div>
                 ))}
               </Slider>

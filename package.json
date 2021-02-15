@@ -15,6 +15,7 @@
     "autoprefixer": "^9.8.6",
     "essential-slices": "^1.0.3",
     "next": "10.0.6",
+    "next-compose-plugins": "^2.2.1",
     "next-slicezone": "0.0.12",
     "next-transpile-modules": "^6.1.0",
     "postcss": "^7.0.35",

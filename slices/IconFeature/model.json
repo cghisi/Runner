@@ -1,0 +1,53 @@
+{
+  "id": "icon_feature",
+  "type": "SharedSlice",
+  "name": "IconFeature",
+  "description": "IconFeature",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "IconFeature",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading1",
+            "label": "Title",
+            "placeholder": "This is where it all begins..."
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "single": "paragraph",
+            "label": "Description",
+            "placeholder": "A nice description of your feature"
+          }
+        }
+      },
+      "items": {
+        "image": {
+          "type": "Image",
+          "config": {
+            "id": "image",
+            "label": "",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "caption": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "preformatted,paragraph"
+          },
+          "type": "StructuredText"
+        }
+      }
+    }
+  ]
+}
