@@ -1,7 +1,8 @@
 import React from "react";
 import Head from "next/head";
 
-import {Header} from "./Header";
+import { Header } from "./Header";
+import { Footer } from "./Footer";
 
 const Layout = ({ menu, children }) => {
   return (
@@ -9,12 +10,6 @@ const Layout = ({ menu, children }) => {
       <Head>
         <meta charSet="utf-8" />
         <link rel="icon" href="/favicon_32x32.png" type="image/png" />
-        <link
-          rel="preload"
-          href="/fonts/OpenSans-Regular.woff"
-          as="font"
-          crossOrigin=""
-        />
         <title>RUNNER</title>
         <meta
           name="description"
@@ -27,6 +22,7 @@ const Layout = ({ menu, children }) => {
         menu={menu}
       />
       <main>{children}</main>
+      <Footer />
     </div>
   );
 };

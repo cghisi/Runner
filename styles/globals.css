@@ -12,10 +12,10 @@
     margin: 0px !important;
   }
   h2 {
-    @apply text-2xl;
+    @apply text-4xl;
   }
   h3 {
-    @apply text-lg;
+    @apply text-2xl;
   }
   a {
     @apply text-blue-600 underline;

@@ -32,10 +32,14 @@ export const Header = ({ backgroundColor, menu, altLangs }) => {
           ) : (
             <ul>
               <li className="mr-6 inline-block">
-                <a href="#">Element 1</a>
+                <NextLink href={"/"} passHref>
+                  <a>Element 1</a>
+                </NextLink>
               </li>
               <li className="mr-6 inline-block">
-                <a href="#">Element 2</a>
+                <NextLink href={"/"} passHref>
+                  <a>Element 2</a>
+                </NextLink>
               </li>
             </ul>
           )}

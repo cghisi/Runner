@@ -12,38 +12,41 @@
       "description": "IconFeature",
       "primary": {
         "title": {
-          "type": "StructuredText",
           "config": {
-            "single": "heading1",
             "label": "Title",
-            "placeholder": "This is where it all begins..."
-          }
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          },
+          "type": "StructuredText"
         },
-        "description": {
-          "type": "StructuredText",
+        "background": {
+          "type": "Color",
           "config": {
-            "single": "paragraph",
-            "label": "Description",
-            "placeholder": "A nice description of your feature"
+            "label": "",
+            "id": "background",
+            "placeholder": ""
           }
         }
       },
       "items": {
         "image": {
-          "type": "Image",
           "config": {
-            "id": "image",
             "label": "",
-            "constraint": {},
+            "constraint": {
+              "width": 80,
+              "height": 80
+            },
             "thumbnails": []
-          }
+          },
+          "type": "Image"
         },
         "caption": {
           "config": {
             "label": "",
             "placeholder": "",
             "allowTargetBlank": true,
-            "single": "preformatted,paragraph"
+            "single": "heading4"
           },
           "type": "StructuredText"
         }

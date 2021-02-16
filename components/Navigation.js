@@ -14,11 +14,12 @@ const Links = ({ menuLinks }) => {
       <nav>
         <ul>
           {menuLinks.map((menuLink, index) => (
-            <li className="mr-6 inline-block" key={`menulink-${index}`}>
+            <li
+              className="mr-6 inline-block text-black link-navigation"
+              key={`menulink-${index}`}
+            >
               <Link link={menuLink.link}>
-                <a className="text-black link-navigation">
-                  {RichText.asText(menuLink.label)}
-                </a>
+                {RichText.asText(menuLink.label)}
               </Link>
             </li>
           ))}

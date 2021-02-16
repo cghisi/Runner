@@ -12,12 +12,13 @@
       "description": "TextImage",
       "primary": {
         "title": {
-          "type": "StructuredText",
           "config": {
-            "single": "heading1",
             "label": "Title",
-            "placeholder": "This is where it all begins..."
-          }
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          },
+          "type": "StructuredText"
         },
         "description": {
           "type": "StructuredText",
@@ -31,8 +32,8 @@
           "config": {
             "label": "",
             "constraint": {
-              "width": 450,
-              "height": 600
+              "width": 550,
+              "height": 730
             },
             "thumbnails": [
               {

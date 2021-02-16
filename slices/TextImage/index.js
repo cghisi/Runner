@@ -7,11 +7,20 @@ import { Button } from "../../components/Button";
 import { RichText } from "prismic-reactjs";
 
 export const MySlice = ({ slice, position, primary }) => {
-  const divPosition =
-    position == "left" && "flex-col-reverse md:flex-row-reverse";
+  var divPosition;
+
+  if (position == null) {
+    if (slice.primary.position == "Left") {
+      divPosition = "flex-col-reverse md:flex-row-reverse text-left";
+    }
+  } else {
+    if (position == "Left") {
+      divPosition = "flex-col-reverse md:flex-row-reverse";
+    }
+  }
 
   return (
-    <section className="container mx-auto text-center">
+    <section className="container mx-auto text-center my-28">
       <div className={["flex flex-col md:flex-row", divPosition].join(" ")}>
         <div className="md:w-1/2 m-auto text-center md:text-left max-w-md">
           {slice.primary.title && (
@@ -32,8 +41,8 @@ export const MySlice = ({ slice, position, primary }) => {
           {slice.primary.image && (
             <Image
               src={slice.primary.image.url}
-              height={800}
-              width={500}
+              height={slice.primary.image.dimensions.height}
+              width={slice.primary.image.dimensions.width}
               alt={slice.primary.alt}
               className="mx-auto"
             />
@@ -45,11 +54,7 @@ export const MySlice = ({ slice, position, primary }) => {
 };
 
 MySlice.propTypes = {
-  position: PropTypes.oneOf(["left", "right"]),
-};
-
-MySlice.defaultProps = {
-  position: "right",
+  position: PropTypes.oneOf(["Left", "Right"]),
 };
 
 export default MySlice;

@@ -11,7 +11,7 @@ const MySlice = ({ slice }) => {
         backgroundColor: slice.primary.background,
       }}
     >
-      <div className="container mx-auto flex py-10">
+      <div className="container mx-auto flex py-28">
         <div className="w-2/3">
           {slice.primary.image && (
             <div className="text-center">
