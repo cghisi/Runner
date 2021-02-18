@@ -9,7 +9,7 @@ import Layout from "./../components/Layout";
 const Page = (props) => {
   return (
     <Layout menu={props.menu}>
-      <SliceZone {...props} resolver={resolver} />;
+      <SliceZone {...props} resolver={resolver} />
     </Layout>
   );
 };

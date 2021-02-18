@@ -6,31 +6,38 @@ import ReactPlayer from "react-player";
 
 const MySlice = ({ wide, slice }) => {
   return (
-    <section className="container mx-auto text-center">
-      {slice.primary.title ? (
-        <RichText render={slice.primary.title} />
-      ) : (
-        <h2>Template slice, update me!</h2>
-      )}
-      {slice.primary.description ? (
-        <RichText render={slice.primary.description} />
-      ) : (
-        <p>start by editing this slice from inside the SliceMachine builder!</p>
-      )}
-      {slice.primary.video && (
-        <div className="player-wrapper">
-          <ReactPlayer
-            url={slice.primary.video}
-            className="mx-auto react-player"
-            width="100%"
-            height="100%"
-            controls="false"
-            playing="true"
-            muted="true"
-            pip="false"
-          />
-        </div>
-      )}
+    <section
+      style={{
+        backgroundColor: slice.primary.background,
+      }}
+    >
+      <div className="container mx-auto text-center py-20">
+        {slice.primary.title && (
+          <div className="text-center mb-20">
+            <RichText render={slice.primary.title} />
+          </div>
+        )}
+        {slice.primary.description && (
+          <div className="text-center my-5">
+            <RichText render={slice.primary.description} />
+          </div>
+        )}
+        {slice.primary.video && (
+          <div>
+            <ReactPlayer
+              url={slice.primary.video.embed_url}
+              className="mx-auto react-player"
+              controls="false"
+              playing="true"
+              muted="true"
+              pip="false"
+              width="1000px"
+              height="560px"
+              loop="true"
+            />
+          </div>
+        )}
+      </div>
     </section>
   );
 };

@@ -5,14 +5,14 @@ import { RichText } from "prismic-reactjs";
 import { Button } from "../../components/Button";
 
 const MySlice = ({ slice }) => (
-  <section className="container mx-auto text-center w-1/2 my-10">
+  <section className="container mx-auto text-center w-1/2 my-20">
     {slice.primary.title && (
-      <div className="py-5">
+      <div className="mb-20">
         <RichText render={slice.primary.title} />
       </div>
     )}
     {slice.primary.description && (
-      <div className="py-10">
+      <div className="pb-10">
         <RichText render={slice.primary.description} />
       </div>
     )}

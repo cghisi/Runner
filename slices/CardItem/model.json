@@ -1,0 +1,72 @@
+{
+  "id": "card_item",
+  "type": "SharedSlice",
+  "name": "CardItem",
+  "description": "CardItem",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "CardItem",
+      "primary": {
+        "title": {
+          "config": {
+            "label": "Title",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          },
+          "type": "StructuredText"
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "single": "paragraph",
+            "label": "Description",
+            "placeholder": "A nice description of your feature"
+          }
+        },
+        "background": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Color"
+        }
+      },
+      "items": {
+        "image": {
+          "config": {
+            "label": "",
+            "constraint": {
+              "width": 80,
+              "height": 80
+            },
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "title": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading4"
+          },
+          "type": "StructuredText"
+        },
+        "description": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,list-item,o-list-item,rtl,strong,em"
+          },
+          "type": "StructuredText"
+        }
+      }
+    }
+  ]
+}

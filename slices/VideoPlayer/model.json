@@ -34,6 +34,14 @@
             "placeholder": ""
           },
           "type": "Embed"
+        },
+        "background": {
+          "type": "Color",
+          "config": {
+            "label": "",
+            "id": "background",
+            "placeholder": ""
+          }
         }
       },
       "items": {}
