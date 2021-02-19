@@ -2,29 +2,20 @@ import React from "react";
 import { RichText } from "prismic-reactjs";
 import Link from "./DocLink";
 
-const Navbar = ({ menuLinks = [] }) => (
-  <header className="site-header">
-    <Links menuLinks={menuLinks} />
-  </header>
+const Navbar = ({ menuLinks = [], direction }) => (
+  <Links menuLinks={menuLinks} direction={direction} />
 );
 
-const Links = ({ menuLinks }) => {
+const Links = ({ menuLinks, direction }) => {
   if (menuLinks) {
     return (
-      <nav>
-        <ul>
-          {menuLinks.map((menuLink, index) => (
-            <li
-              className="mr-6 inline-block text-black link-navigation"
-              key={`menulink-${index}`}
-            >
-              <Link link={menuLink.link}>
-                {RichText.asText(menuLink.label)}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
+      <ul className={direction}>
+        {menuLinks.map((menuLink, index) => (
+          <li className="mx-6 link-navigation py-1" key={`menulink-${index}`}>
+            <Link link={menuLink.link}>{RichText.asText(menuLink.label)}</Link>
+          </li>
+        ))}
+      </ul>
     );
   }
   return null;

@@ -22,7 +22,7 @@ const Layout = ({ menu, children }) => {
         menu={menu}
       />
       <main>{children}</main>
-      <Footer />
+      <Footer menu={menu} />
     </div>
   );
 };
