@@ -6,26 +6,33 @@ import Navigation from "./Navigation";
 
 export const Footer = ({ backgroundColor, menu }) => {
   return (
-    <section className="bg-black text-white py-10 pb-64">
+    <footer
+      className="text-white py-10 pb-64"
+      style={
+        menu
+          ? { backgroundColor: "#000" }
+          : { backgroundColor: backgroundColor }
+      }
+    >
       <div className="container mx-auto">
         <div className="grid grid-cols-3 gap-4">
           <div>
             <h4 className="font-bold">Menu</h4>
             {menu ? (
-              <ul className="text-white py-5">
+              <ul className="text-white py-2">
                 <Navigation
                   menuLinks={menu.data.menu_links}
                   direction="block"
                 />
               </ul>
             ) : (
-              <ul>
-                <li className="mr-6">
+              <ul className="text-white py-2">
+                <li className="mx-5 py-2">
                   <NextLink href={"/"} passHref>
                     <a>Element 1</a>
                   </NextLink>
                 </li>
-                <li className="mr-6">
+                <li className="mx-5 py-2">
                   <NextLink href={"/"} passHref>
                     <a>Element 2</a>
                   </NextLink>
@@ -37,7 +44,7 @@ export const Footer = ({ backgroundColor, menu }) => {
           <div>3</div>
         </div>
       </div>
-    </section>
+    </footer>
   );
 };
 
@@ -46,5 +53,5 @@ Footer.propTypes = {
 };
 
 Footer.defaultProps = {
-  backgroundColor: "#DDE6EC",
+  backgroundColor: "#000",
 };

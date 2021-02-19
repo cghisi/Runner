@@ -11,7 +11,7 @@ const Links = ({ menuLinks, direction }) => {
     return (
       <ul className={direction}>
         {menuLinks.map((menuLink, index) => (
-          <li className="mx-6 link-navigation py-1" key={`menulink-${index}`}>
+          <li className="mx-5 link-navigation py-2" key={`menulink-${index}`}>
             <Link link={menuLink.link}>{RichText.asText(menuLink.label)}</Link>
           </li>
         ))}
