@@ -8,24 +8,23 @@ import Layout from "./../components/Layout";
 
 const HomePage = (props) => {
   return (
-    // <Layout menu={props.menu}>
-    //   <SliceZone {...props} resolver={resolver} />
-    // </Layout>
-    <div>test</div>
+    <Layout menu={props.menu}>
+      <SliceZone {...props} resolver={resolver} />
+    </Layout>
   );
 };
 
 // Fetch content from prismic
-// export const getStaticProps = useGetStaticProps({
-//   client: Client(),
-//   uid: "homepage",
-// });
+export const getStaticProps = useGetStaticProps({
+  client: Client(),
+  uid: () => "homepage",
+});
 
-// export const getStaticPaths = useGetStaticPaths({
-//   client: Client(),
-//   type: "page",
-//   fallback: true, // process.env.NODE_ENV === 'development',
-//   //formatPath: ({ uid }) => ({ params: { uid } }),
-// });
+export const getStaticPaths = useGetStaticPaths({
+  client: Client(),
+  type: "page",
+  fallback: true, // process.env.NODE_ENV === 'development',
+  formatPath: () => ({ params: { uid: "home" } }),
+});
 
 export default HomePage;
