@@ -64,7 +64,7 @@ class MySlice extends Component {
         <div className="md:flex">
           <div className="md:w-1/3 m-auto text-center md:text-left px-5">
             {slice.primary.title && (
-              <div className="md:text-left">
+              <div className="md:text-left md:mb-0 mb-20">
                 <RichText render={slice.primary.title} />
               </div>
             )}
@@ -72,7 +72,7 @@ class MySlice extends Component {
               <SliderNav data={this} />
             </div>
             {slice.primary.ctaCaption && (
-              <div className="py-5">
+              <div className="py-5 hidden md:block">
                 <Button primary size="small" label={slice.primary.ctaCaption} />
               </div>
             )}

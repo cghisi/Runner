@@ -6,18 +6,18 @@ import Navigation from "./Navigation";
 
 export const Newsletter = () => {
   return (
-    <div className="w-2/4">
+    <div className="md:w-2/4 my-5">
       <h3 className="font-medium">Newsletter</h3>
       <div className="py-2">
         <p>Hi, suscribe to our newsletter and stay inform about our company</p>
         <input
           type="text"
           placeholder="Enter your email"
-          className="my-3 p-3 rounded-sm text-black"
+          className="my-3 p-3 rounded-sm text-black md:w-3/4"
         />
         <button
           type="submit"
-          className="mx-2 px-5 py-4 rounded-sm bg-black hover:bg-white hover:text-black"
+          className="md:mx-2 px-5 py-4 rounded-sm bg-black hover:bg-white hover:text-black"
         >
           Sign Up
         </button>
@@ -28,7 +28,7 @@ export const Newsletter = () => {
 
 export const Social = () => {
   return (
-    <div className="w-1/4">
+    <div className="md:w-1/4 my-5">
       <h3>Social</h3>
       <ul className="text-white py-2">
         <li className="mx-5 py-1">
@@ -62,8 +62,8 @@ export const Footer = ({ backgroundColor, menu }) => {
       }
     >
       <div className="container mx-auto">
-        <div className="flex">
-          <div className="w-1/4">
+        <div className="md:flex mx-5">
+          <div className="md:w-1/4 my-5">
             <h3 className="font-medium">Menu</h3>
             {menu ? (
               <ul className="text-white py-2 font-normal">
