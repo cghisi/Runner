@@ -5,8 +5,6 @@ import { RichText } from "prismic-reactjs";
 import ReactPlayer from "react-player";
 
 const MySlice = ({ wide, slice }) => {
-  console.log(slice.primary.video);
-
   if (slice.primary.video.embed_url) {
     var video = slice.primary.video.embed_url;
   } else {
