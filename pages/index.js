@@ -8,7 +8,7 @@ import Layout from "./../components/Layout";
 
 const Page = (props) => {
   return (
-    <Layout>
+    <Layout menu={props.menu}>
       <SliceZone {...props} resolver={resolver} />
     </Layout>
   );
@@ -20,11 +20,11 @@ export const getStaticProps = useGetStaticProps({
   uid: () => "homepage",
 });
 
-export const getStaticPaths = useGetStaticPaths({
-  client: Client(),
-  type: "page",
-  fallback: true, // process.env.NODE_ENV === 'development',
-  formatPath: () => ({ params: { uid: "homepage" } }),
-});
+// export const getStaticPaths = useGetStaticPaths({
+//   client: Client(),
+//   type: "page",
+//   fallback: true, // process.env.NODE_ENV === 'development',
+//   formatPath: () => ({ params: { uid: "homepage" } }),
+// });
 
 export default Page;
