@@ -36,7 +36,7 @@ const MySlice = ({ slice }) => (
                 />
               )}
               {item.title && (
-                <div className="m-5 text-2xl font-bold">
+                <div className="m-5 text-2xl font-medium">
                   <RichText render={item.title} />
                 </div>
               )}

@@ -15,6 +15,18 @@ const Layout = ({ menu, children }) => {
           name="description"
           content="Your consulting team that will help you with your website, translations..."
         />
+        <link
+          rel="preload"
+          href="/fonts/Poppins-Regular.ttf'"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/Poppins-Medium.ttf'"
+          as="font"
+          crossOrigin=""
+        />
       </Head>
       <Header
         //altLangs={altLangs}

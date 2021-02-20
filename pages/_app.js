@@ -15,19 +15,17 @@ export default class App extends NextApp {
     const menu = (await client.getSingle("menu")) || {};
     return {
       props: {
-        menu: menu
+        menu: menu,
       },
     };
   }
 
   render() {
-    const { Component, pageProps, props } = this.props
+    const { Component, pageProps, props } = this.props;
     return (
       <ThemeProvider theme={theme}>
-        <BaseStyles>
-            <Component {...pageProps} menu={props.menu} />
-        </BaseStyles>
+        <Component {...pageProps} menu={props.menu} />
       </ThemeProvider>
-    )
+    );
   }
 }

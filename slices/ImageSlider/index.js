@@ -90,9 +90,11 @@ class MySlice extends Component {
                         alt={item.image.alt}
                       />
                     )}
-                    <div className="underline pb-5">
-                      <RichText render={item.title} />
-                    </div>
+                    {item.image && (
+                      <div className="underline pb-5">
+                        <RichText render={item.title} />
+                      </div>
+                    )}
                     {item.description && <RichText render={item.description} />}
                     {item.ctaCaption && (
                       <div className="md:text-left py-5">

@@ -17,7 +17,7 @@ export const Footer = ({ backgroundColor, menu }) => {
       <div className="container mx-auto">
         <div className="grid grid-cols-3 gap-4">
           <div>
-            <h4 className="font-bold">Menu</h4>
+            <h4 className="font-medium">Menu</h4>
             {menu ? (
               <ul className="text-white py-2">
                 <Navigation
