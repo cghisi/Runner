@@ -1,0 +1,17 @@
+Watching /Users/christophe/Documents/dev/storybook and all sub-directories not excluded by your .gitignore. Will not monitor dotfiles.
+Found & ignored ./node_modules ; is listed in .gitignore
+Found & ignored ./styles/globals.css ; has ignored extension
+
+Starting: build-storybook -- --output-dir /var/folders/j3/mdhdbg493m921lr1m5jsz9s40000gn/T/chromatic--7138-UYfZqqoiKNJy
+node:internal/modules/cjs/loader:926
+  throw err;
+  ^
+
+Error: Cannot find module '/Users/christophe/Documents/dev/storybook/build-storybook'
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:923:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:768:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)
+    at node:internal/main/run_main_module:17:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
