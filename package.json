@@ -11,6 +11,7 @@
     "slicemachine": "start-slicemachine --port 9999"
   },
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.0",
     "@tailwindcss/postcss7-compat": "^2.0.2",
     "autoprefixer": "^9.8.6",
     "essential-slices": "^1.0.3",
@@ -19,6 +20,7 @@
     "next-slicezone": "0.0.12",
     "next-transpile-modules": "^6.1.0",
     "postcss": "^7.0.35",
+    "postcss-preset-env": "^6.7.0",
     "prismic-javascript": "^3.0.2",
     "prismic-reactjs": "^1.3.3",
     "react": "17.0.1",
