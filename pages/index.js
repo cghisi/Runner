@@ -6,7 +6,7 @@ import resolver from "../sm-resolver";
 
 import Layout from "./../components/Layout";
 
-const HomePage = (props) => {
+const Page = (props) => {
   return (
     <Layout menu={props.menu}>
       <SliceZone {...props} resolver={resolver} />
@@ -27,4 +27,4 @@ export const getStaticPaths = useGetStaticPaths({
   formatPath: () => ({ params: { uid: "home" } }),
 });
 
-export default HomePage;
+export default Page;
