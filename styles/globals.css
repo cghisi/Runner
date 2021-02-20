@@ -20,6 +20,9 @@
   a {
     @apply text-blue-600 underline;
   }
+  strong {
+    @apply font-medium;
+  }
 }
 
 @font-face {
