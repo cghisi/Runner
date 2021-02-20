@@ -12,7 +12,7 @@ const Links = ({ menuLinks, direction }) => {
       <ul className={direction}>
         {menuLinks.map((menuLink, index) => (
           <li
-            className="mx-5 link-navigation font-medium hover:text-gray-500 py-1"
+            className="mx-5 link-navigation hover:text-gray-500 py-1"
             key={`menulink-${index}`}
           >
             <Link link={menuLink.link}>{RichText.asText(menuLink.label)}</Link>

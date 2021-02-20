@@ -13,10 +13,10 @@ import { RichText } from "prismic-reactjs";
 const SliderNav = ({ data }) => {
   return (
     <div className="py-5">
-      <button onClick={data.previous} className="px-2 inline-block">
+      <button onClick={data.previous} className="px-2 md:px-0 inline-block">
         <Image src="/left.png" alt="previous image" width={30} height={30} />
       </button>
-      <button onClick={data.next} className="px-2 inline-block">
+      <button onClick={data.next} className="px-2 md:px-0 inline-block">
         <Image src="/right.png" alt="next image" width={30} height={30} />
       </button>
     </div>

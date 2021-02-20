@@ -29,16 +29,16 @@ const MySlice = ({ wide, slice }) => {
           </div>
         )}
         {slice.primary.video && (
-          <div>
+          <div className="player-wrapper mx-5">
             <ReactPlayer
               url={video}
-              className="mx-auto react-player"
+              className="react-player"
               controls={false}
               playing={true}
               muted={true}
               pip={false}
-              width="1000px"
-              height="560px"
+              width="100%"
+              height="100%"
               loop={true}
             />
           </div>

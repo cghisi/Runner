@@ -4,22 +4,69 @@ import PropTypes from "prop-types";
 
 import Navigation from "./Navigation";
 
+export const Newsletter = () => {
+  return (
+    <div className="w-2/4">
+      <h3 className="font-medium">Newsletter</h3>
+      <div className="py-2">
+        <p>Hi, suscribe to our newsletter and stay inform about our company</p>
+        <input
+          type="text"
+          placeholder="Enter your email"
+          className="my-3 p-3 rounded-sm text-black"
+        />
+        <button
+          type="submit"
+          className="mx-2 px-5 py-4 rounded-sm bg-black hover:bg-white hover:text-black"
+        >
+          Sign Up
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export const Social = () => {
+  return (
+    <div className="w-1/4">
+      <h3>Social</h3>
+      <ul className="text-white py-2">
+        <li className="mx-5 py-1">
+          <NextLink href={"/"} passHref>
+            <a>Twitter</a>
+          </NextLink>
+        </li>
+        <li className="mx-5 py-1">
+          <NextLink href={"/"} passHref>
+            <a>Facebook</a>
+          </NextLink>
+        </li>
+        <li className="mx-5 py-1">
+          <NextLink href={"/"} passHref>
+            <a>Instagram</a>
+          </NextLink>
+        </li>
+      </ul>
+    </div>
+  );
+};
+
 export const Footer = ({ backgroundColor, menu }) => {
   return (
     <footer
-      className="text-white py-10 pb-64"
+      className="text-white py-10 pb-32"
       style={
         menu
-          ? { backgroundColor: "#000" }
+          ? { backgroundColor: "#313942" }
           : { backgroundColor: backgroundColor }
       }
     >
       <div className="container mx-auto">
-        <div className="grid grid-cols-3 gap-4">
-          <div>
-            <h4 className="font-medium">Menu</h4>
+        <div className="flex">
+          <div className="w-1/4">
+            <h3 className="font-medium">Menu</h3>
             {menu ? (
-              <ul className="text-white py-2">
+              <ul className="text-white py-2 font-normal">
                 <Navigation
                   menuLinks={menu.data.menu_links}
                   direction="block"
@@ -27,12 +74,12 @@ export const Footer = ({ backgroundColor, menu }) => {
               </ul>
             ) : (
               <ul className="text-white py-2">
-                <li className="mx-5 py-2">
+                <li className="mx-5 link-navigation hover:text-gray-500 py-1">
                   <NextLink href={"/"} passHref>
                     <a>Element 1</a>
                   </NextLink>
                 </li>
-                <li className="mx-5 py-2">
+                <li className="mx-5 link-navigation hover:text-gray-500 py-1">
                   <NextLink href={"/"} passHref>
                     <a>Element 2</a>
                   </NextLink>
@@ -40,8 +87,8 @@ export const Footer = ({ backgroundColor, menu }) => {
               </ul>
             )}
           </div>
-          <div>2</div>
-          <div>3</div>
+          <Social />
+          <Newsletter />
         </div>
       </div>
     </footer>
@@ -53,5 +100,5 @@ Footer.propTypes = {
 };
 
 Footer.defaultProps = {
-  backgroundColor: "#000",
+  backgroundColor: "#313942",
 };
