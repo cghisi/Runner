@@ -11,8 +11,8 @@ const MySlice = ({ slice }) => {
         backgroundColor: slice.primary.background,
       }}
     >
-      <div className="container mx-auto flex py-28">
-        <div className="w-2/3">
+      <div className="container mx-auto flex-none md:flex py-2 md:py-28">
+        <div className="md:w-2/3 mx-5">
           {slice.primary.image && (
             <div className="text-left">
               <Image
@@ -24,7 +24,7 @@ const MySlice = ({ slice }) => {
             </div>
           )}
         </div>
-        <div className="w-1/3 my-auto text-left">
+        <div className="md:w-1/3 my-5 md:my-auto mx-5 text-center md:text-left">
           {slice.primary.title && (
             <div className="py-10 font-bold">
               <RichText render={slice.primary.title} />

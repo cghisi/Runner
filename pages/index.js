@@ -17,14 +17,14 @@ const HomePage = (props) => {
 // Fetch content from prismic
 export const getStaticProps = useGetStaticProps({
   client: Client(),
-  //uid: ({ params }) => params.uid,
+  uid: "homepage",
 });
 
 export const getStaticPaths = useGetStaticPaths({
   client: Client(),
-  type: "homepage",
+  type: "page",
   fallback: true, // process.env.NODE_ENV === 'development',
-  //formatPath: ({ uid }) => ({ params: { uid } }),
+  formatPath: ({ uid }) => ({ params: { uid } }),
 });
 
 export default HomePage;

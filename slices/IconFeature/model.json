@@ -37,7 +37,13 @@
               "width": 80,
               "height": 80
             },
-            "thumbnails": []
+            "thumbnails": [
+              {
+                "name": "mobile",
+                "width": 50,
+                "height": 50
+              }
+            ]
           },
           "type": "Image"
         },

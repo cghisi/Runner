@@ -21,7 +21,7 @@ const MySlice = ({ slice }) => (
         </div>
       )}
       {slice.items && (
-        <div className="grid grid-cols-3 gap-20 my-10">
+        <div className="grid md:grid-cols-3 mx-10 md:mx-5 gap-20 md:my-10">
           {slice.items.map((item, index) => (
             <div
               key={index}
@@ -41,7 +41,7 @@ const MySlice = ({ slice }) => (
                 </div>
               )}
               {item.description && (
-                <div className="mx-20">
+                <div className="mx-10">
                   <RichText render={item.description} />
                 </div>
               )}

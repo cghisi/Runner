@@ -20,7 +20,7 @@ export const MySlice = ({ slice, position, primary }) => {
   }
 
   return (
-    <section className="container mx-auto text-center my-28">
+    <section className="container mx-auto text-center my-20 md:my-28 px-5">
       <div className={["flex flex-col md:flex-row", divPosition].join(" ")}>
         <div className="md:w-1/2 m-auto text-center md:text-left max-w-md">
           {slice.primary.title && (
@@ -32,7 +32,7 @@ export const MySlice = ({ slice, position, primary }) => {
             <RichText render={slice.primary.description} />
           )}
           {slice.primary.ctaLink && (
-            <div className="my-10">
+            <div className="mt-10">
               <Button primary size="small" label={slice.primary.ctaLabel} />
             </div>
           )}

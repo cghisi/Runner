@@ -5,6 +5,14 @@ import { RichText } from "prismic-reactjs";
 import ReactPlayer from "react-player";
 
 const MySlice = ({ wide, slice }) => {
+  console.log(slice.primary.video);
+
+  if (slice.primary.video.embed_url) {
+    var video = slice.primary.video.embed_url;
+  } else {
+    var video = slice.primary.video;
+  }
+
   return (
     <section
       style={{
@@ -25,15 +33,15 @@ const MySlice = ({ wide, slice }) => {
         {slice.primary.video && (
           <div>
             <ReactPlayer
-              url={slice.primary.video.embed_url}
+              url={video}
               className="mx-auto react-player"
-              controls="false"
-              playing="true"
-              muted="true"
-              pip="false"
+              controls={false}
+              playing={true}
+              muted={true}
+              pip={false}
               width="1000px"
               height="560px"
-              loop="true"
+              loop={true}
             />
           </div>
         )}

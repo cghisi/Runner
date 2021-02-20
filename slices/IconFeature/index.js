@@ -10,23 +10,23 @@ const MySlice = ({ slice }) => {
         backgroundColor: slice.primary.background,
       }}
     >
-      <div className="container mx-auto py-20">
+      <div className="container mx-auto py-20 px-5">
         {slice.primary.title && (
           <div className="text-center mb-20">
             <RichText render={slice.primary.title} />
           </div>
         )}
         {slice.items && (
-          <div className="grid grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {slice.items.map((item, index) => (
               <div key={index} className="py-5 text-center">
                 {item.image && (
-                  <div className="rounded-full border-black border-2 h-48 w-48 flex items-center justify-center bg-white mx-auto">
+                  <div className="rounded-full border-black border-2 h-32 w-32 md:h-48 md:w-48 flex items-center justify-center bg-white mx-auto">
                     <Image
                       src={item.image.url}
                       width={item.image.dimensions.width}
                       height={item.image.dimensions.height}
-                      alt="SEO to add"
+                      alt={item.image.alt}
                     />
                   </div>
                 )}
