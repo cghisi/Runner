@@ -22,10 +22,6 @@ export default class App extends NextApp {
 
   render() {
     const { Component, pageProps, props } = this.props;
-    return (
-      <ThemeProvider theme={theme}>
-        <Component {...pageProps} menu={props.menu} />
-      </ThemeProvider>
-    );
+    return <Component {...pageProps} menu={props.menu} />;
   }
 }
