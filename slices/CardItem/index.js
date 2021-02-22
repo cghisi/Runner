@@ -20,7 +20,7 @@ const MySlice = ({ slice, background, columns }) => {
         backgroundColor: bgColor,
       }}
     >
-      <div className="container py-20 mx-auto">
+      <div className="container py-20 mx-auto px-5">
         {slice.primary.title && (
           <div className="text-center mb-20">
             <RichText render={slice.primary.title} />
