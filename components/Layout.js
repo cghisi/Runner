@@ -13,11 +13,11 @@ const Layout = ({ menu, children }) => {
           name="viewport"
           content="width=device-width, initial-scale=1.0"
         ></meta>
-        <link rel="icon" href="/favicon_32x32.png" type="image/png" />
+        <link rel="icon" href="/favicon.png" type="image/png" />
         <title>RUNNER</title>
         <meta
           name="description"
-          content="Your consulting team that will help you with your website, translations..."
+          content="Start running, earn rewards. Add more to your running schedule with RUNNING"
         />
         <link
           rel="preload"

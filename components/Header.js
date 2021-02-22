@@ -21,7 +21,7 @@ export const Header = ({ backgroundColor, menu, altLangs }) => {
         </div>
         <div className="flex items-center py-6 w-1/3 md:w-1/5">
           <NextLink href={"/"} passHref>
-            <a className="logo text-2xl font-medium mx-auto md:mx-0">RUNNER</a>
+            <a className="logo text-2xl font-bold mx-auto md:mx-0">RUNNER</a>
           </NextLink>
         </div>
         <div className="hidden md:flex justify-center items-center py-6 md:w-3/5 sm:w-1/3">
