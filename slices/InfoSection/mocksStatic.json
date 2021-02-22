@@ -1,0 +1,28 @@
+[
+    {
+        "id": "default-slice",
+        "name": "Default slice",
+        "docURL": "...",
+        "version": "sktwi1xtmkfgx8626",
+        "description": "InfoSection",
+        "primary": {
+            "title": [
+                {
+                    "type": "heading2",
+                    "text": "strategize strategic e-commerce",
+                    "spans": []
+                }
+            ],
+            "description": [
+                {
+                    "type": "paragraph",
+                    "text": "Voluptate sit nulla ex ea elit veniam dolor ex sit qui exercitation.\nOfficia labore consectetur eiusmod et et tempor consectetur nulla reprehenderit in qui magna laboris magna ea. Officia et elit cupidatat sit aute. Nisi culpa eu nulla consequat aute elit ipsum ad anim anim nisi eu irure.",
+                    "spans": []
+                }
+            ],
+            "ctaLabel": "Become A Runner"
+        },
+        "items": [],
+        "slice_type": "info_section"
+    }
+]

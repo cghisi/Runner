@@ -1,0 +1,104 @@
+[
+    {
+        "id": "default-slice",
+        "name": "Default slice",
+        "docURL": "...",
+        "version": "sktwi1xtmkfgx8626",
+        "description": "CardItem",
+        "primary": {
+            "title": [
+                {
+                    "type": "heading2",
+                    "text": "empower next-generation vortals",
+                    "spans": []
+                }
+            ],
+            "description": [
+                {
+                    "type": "paragraph",
+                    "text": "Do cillum nostrud eiusmod cupidatat.\nNulla sit laboris sunt incididunt consectetur laboris adipisicing commodo ad ipsum pariatur.",
+                    "spans": []
+                }
+            ],
+            "background": "#dde6ec"
+        },
+        "items": [
+            {
+                "image": {
+                    "dimensions": {
+                        "width": 80,
+                        "height": 80
+                    },
+                    "alt": "Placeholder image",
+                    "copyright": null,
+                    "url": "https://images.prismic.io/themasterslice/ea7a66ba-827e-4c00-9d55-025c6241e1ac_Snail.png?w=80&h=80&fit=crop"
+                },
+                "title": [
+                    {
+                        "type": "heading4",
+                        "text": "transition one-to-one users",
+                        "spans": []
+                    }
+                ],
+                "description": [
+                    {
+                        "type": "paragraph",
+                        "text": "Fugiat ipsum commodo consequat esse cillum anim sit tempor eu laborum.",
+                        "spans": []
+                    }
+                ]
+            },
+            {
+                "image": {
+                    "dimensions": {
+                        "width": 80,
+                        "height": 80
+                    },
+                    "alt": "Placeholder image",
+                    "copyright": null,
+                    "url": "https://images.prismic.io/themasterslice/1e294b09-6f6c-4492-88bf-e510ab3dbcff_Running+Rabbit.png?w=80&h=80&fit=crop"
+                },
+                "title": [
+                    {
+                        "type": "heading4",
+                        "text": "leverage 24/365 content",
+                        "spans": []
+                    }
+                ],
+                "description": [
+                    {
+                        "type": "paragraph",
+                        "text": "Fugiat ipsum commodo consequat esse cillum anim sit tempor eu laborum.",
+                        "spans": []
+                    }
+                ]
+            },
+            {
+                "image": {
+                    "dimensions": {
+                        "width": 80,
+                        "height": 80
+                    },
+                    "alt": "Placeholder image",
+                    "copyright": null,
+                    "url": "https://images.prismic.io/themasterslice/63e2d24f-591f-490b-b086-4b48aa76eb82_Leopard.png?w=80&h=80&fit=crop"
+                },
+                "title": [
+                    {
+                        "type": "heading4",
+                        "text": "engage methodologies",
+                        "spans": []
+                    }
+                ],
+                "description": [
+                    {
+                        "type": "paragraph",
+                        "text": "Fugiat ipsum commodo consequat esse cillum anim sit tempor eu laborum.",
+                        "spans": []
+                    }
+                ]
+            }
+        ],
+        "slice_type": "card_item"
+    }
+]

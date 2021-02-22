@@ -3,11 +3,21 @@ import { array, shape } from "prop-types";
 import { RichText } from "prismic-reactjs";
 import Image from "next/image";
 
-const MySlice = ({ slice }) => {
+const MySlice = ({ slice, background, columns }) => {
+  let bgColor = slice.primary.background;
+  if (background) {
+    bgColor = background;
+  }
+
+  let displayColumns = "md:grid-cols-4";
+  if (columns) {
+    displayColumns = `md:grid-cols-${columns}`;
+  }
+
   return (
     <section
       style={{
-        backgroundColor: slice.primary.background,
+        backgroundColor: bgColor,
       }}
     >
       <div className="container mx-auto py-20 px-5">
@@ -17,7 +27,7 @@ const MySlice = ({ slice }) => {
           </div>
         )}
         {slice.items && (
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className={[`grid grid-cols-2 gap-4`, displayColumns].join(" ")}>
             {slice.items.map((item, index) => (
               <div key={index} className="py-5 text-center">
                 {item.image && (
@@ -42,14 +52,6 @@ const MySlice = ({ slice }) => {
       </div>
     </section>
   );
-};
-
-MySlice.propTypes = {
-  slice: shape({
-    primary: shape({
-      title: array.isRequired,
-    }).isRequired,
-  }).isRequired,
 };
 
 export default MySlice;
