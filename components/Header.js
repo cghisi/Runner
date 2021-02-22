@@ -3,10 +3,9 @@ import NextLink from "next/link";
 import PropTypes from "prop-types";
 
 import Navigation from "./Navigation";
-//import LanguageSwitcher from "./LanguageSwitcher";
-//import MobileNavigation from "./MobileNavigation";
+import MobileNavigation from "./MobileNavigation";
 
-export const Header = ({ backgroundColor, menu, altLangs }) => {
+export const Header = ({ backgroundColor, menu }) => {
   return (
     <header
       style={
@@ -17,7 +16,7 @@ export const Header = ({ backgroundColor, menu, altLangs }) => {
     >
       <div className="flex container mx-auto">
         <div className="md:hidden justify-end items-center py-6 w-1/3">
-          {/* <MobileNavigation altLangs={altLangs} menu={menu} /> */}
+          <MobileNavigation menu={menu} />
         </div>
         <div className="flex items-center py-6 w-1/3 md:w-1/5">
           <NextLink href={"/"} passHref>

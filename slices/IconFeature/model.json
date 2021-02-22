@@ -1,7 +1,7 @@
 {
   "id": "icon_feature",
   "type": "SharedSlice",
-  "name": "IconFeature",
+  "name": "Slices/IconFeature",
   "description": "IconFeature",
   "variations": [
     {

@@ -1,7 +1,7 @@
 {
   "id": "info_section",
   "type": "SharedSlice",
-  "name": "InfoSection",
+  "name": "Slices/InfoSection",
   "description": "InfoSection",
   "variations": [
     {

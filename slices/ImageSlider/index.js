@@ -47,7 +47,7 @@ class MySlice extends Component {
       dotsDisplay = this.props.dots;
     }
 
-    let autoplayDisplay = true;
+    let autoplayDisplay = false;
     if (this.props.autoplay) {
       autoplayDisplay = this.props.autoplay;
     }

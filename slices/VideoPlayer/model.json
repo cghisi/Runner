@@ -1,7 +1,7 @@
 {
   "id": "video_player",
   "type": "SharedSlice",
-  "name": "VideoPlayer",
+  "name": "Slices/VideoPlayer",
   "description": "VideoPlayer",
   "variations": [
     {

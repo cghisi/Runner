@@ -1,7 +1,7 @@
 {
   "id": "image_slider",
   "type": "SharedSlice",
-  "name": "ImageSlider",
+  "name": "Slices/ImageSlider",
   "description": "ImageSlider",
   "variations": [
     {

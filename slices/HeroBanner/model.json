@@ -1,7 +1,7 @@
 {
   "id": "hero_banner",
   "type": "SharedSlice",
-  "name": "HeroBanner",
+  "name": "Slices/HeroBanner",
   "description": "HeroBanner",
   "variations": [
     {

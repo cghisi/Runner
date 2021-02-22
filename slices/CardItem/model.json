@@ -1,7 +1,7 @@
 {
   "id": "card_item",
   "type": "SharedSlice",
-  "name": "CardItem",
+  "name": "Slices/CardItem",
   "description": "CardItem",
   "variations": [
     {
