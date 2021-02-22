@@ -14,8 +14,6 @@ const MySlice = ({ slice, background, columns }) => {
     displayColumns = `md:grid-cols-${columns}`;
   }
 
-  console.log(displayColumns);
-
   return (
     <section
       style={{

@@ -15,12 +15,12 @@ const MySlice = ({ slice, autoplay, loop, background }) => {
     video = slice.primary.video.embed_url;
   }
 
-  let loopVideo = "true";
+  let loopVideo = true;
   if (loop) {
     loopVideo = loop;
   }
 
-  let autoplayVideo = "true";
+  let autoplayVideo = true;
   if (loop) {
     autoplayVideo = autoplay;
   }
