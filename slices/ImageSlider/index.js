@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { PropTypes } from "prop-types";
 import Slider from "react-slick";
 import Image from "next/image";
 
@@ -38,12 +37,29 @@ class MySlice extends Component {
   }
 
   render() {
+    let slides = 2;
+    if (this.props.slidesToShow) {
+      slides = this.props.slidesToShow;
+    }
+
+    let dotsDisplay = true;
+    if (this.props.dots) {
+      dotsDisplay = this.props.dots;
+    }
+
+    let autoplayDisplay = true;
+    if (this.props.autoplay) {
+      autoplayDisplay = this.props.autoplay;
+    }
+
     const settings = {
-      dots: true,
+      dots: dotsDisplay,
       infinite: true,
       speed: 500,
-      slidesToShow: 2,
-      slidesToScroll: 2,
+      lazyload: true,
+      slidesToShow: slides,
+      slidesToScroll: slides,
+      autoplay: autoplayDisplay,
       responsive: [
         {
           breakpoint: 600,
@@ -114,9 +130,5 @@ class MySlice extends Component {
     );
   }
 }
-
-MySlice.propTypes = {};
-
-MySlice.defaultProps = {};
 
 export default MySlice;

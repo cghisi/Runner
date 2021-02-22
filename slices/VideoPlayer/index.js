@@ -4,17 +4,31 @@ import { RichText } from "prismic-reactjs";
 
 import ReactPlayer from "react-player";
 
-const MySlice = ({ wide, slice }) => {
+const MySlice = ({ slice, autoplay, loop, background }) => {
+  let bgColor = slice.primary.background;
+  if (background) {
+    bgColor = background;
+  }
+
+  let video = slice.primary.video;
   if (slice.primary.video.embed_url) {
-    var video = slice.primary.video.embed_url;
-  } else {
-    var video = slice.primary.video;
+    video = slice.primary.video.embed_url;
+  }
+
+  let loopVideo = "true";
+  if (loop) {
+    loopVideo = loop;
+  }
+
+  let autoplayVideo = "true";
+  if (loop) {
+    autoplayVideo = autoplay;
   }
 
   return (
     <section
       style={{
-        backgroundColor: slice.primary.background,
+        backgroundColor: bgColor,
       }}
     >
       <div className="container mx-auto text-center py-20">
@@ -34,12 +48,12 @@ const MySlice = ({ wide, slice }) => {
               url={video}
               className="react-player"
               controls={false}
-              playing={true}
+              playing={autoplayVideo}
               muted={true}
               pip={false}
               width="100%"
               height="100%"
-              loop={true}
+              loop={loopVideo}
             />
           </div>
         )}
@@ -55,13 +69,5 @@ const MySlice = ({ wide, slice }) => {
 //     }).isRequired,
 //   }).isRequired,
 // };
-
-MySlice.propTypes = {
-  wide: PropTypes.bool,
-};
-
-MySlice.defaultProps = {
-  wide: false,
-};
 
 export default MySlice;
