@@ -4,14 +4,27 @@ import { RichText } from "prismic-reactjs";
 import Image from "next/image";
 import { Button } from "../../components/Button";
 
-const MySlice = ({ slice }) => {
+import { structuredTextPropTypes, background } from "../../utils/prop-types";
+
+const MySlice = ({ slice, background, position }) => {
+  let bgColor = slice.primary.background;
+  if (background) {
+    bgColor = background;
+  }
+
+  let displayPosition = "flex-row";
+  if (position == "Left") {
+    displayPosition = "flex-row-reverse";
+  }
+
   return (
-    <section
-      style={{
-        backgroundColor: slice.primary.background,
-      }}
-    >
-      <div className="container mx-auto flex-none md:flex py-2 md:py-28">
+    <section style={{ backgroundColor: bgColor }}>
+      <div
+        className={[
+          `container mx-auto flex-none md:flex py-2 md:py-28 `,
+          displayPosition,
+        ].join(" ")}
+      >
         <div className="md:w-2/3 mx-5">
           {slice.primary.image && (
             <div className="text-left">
@@ -42,14 +55,6 @@ const MySlice = ({ slice }) => {
       </div>
     </section>
   );
-};
-
-MySlice.propTypes = {
-  slice: shape({
-    primary: shape({
-      title: array.isRequired,
-    }).isRequired,
-  }).isRequired,
 };
 
 export default MySlice;

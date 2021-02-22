@@ -4,6 +4,7 @@ import * as nextImage from "next/image";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
+  controls: { expanded: true },
 };
 
 // Replace next/image for Storybook
