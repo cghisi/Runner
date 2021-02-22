@@ -49,6 +49,7 @@ const MySlice = ({ slice, background, columns }) => {
                     width={item.image.dimensions.width}
                     height={item.image.dimensions.height}
                     className="mx-auto"
+                    alt={item.image.alt}
                   />
                 )}
                 {item.title && (

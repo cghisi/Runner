@@ -19,6 +19,18 @@ const Layout = ({ menu, children }) => {
           name="description"
           content="Start running, earn rewards. Add more to your running schedule with RUNNING"
         />
+        <link
+          rel="preload"
+          href="/fonts/Poppins-Regular.ttf"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/Poppins-Medium.ttf"
+          as="font"
+          crossOrigin=""
+        />
       </Head>
       <Header
         //altLangs={altLangs}

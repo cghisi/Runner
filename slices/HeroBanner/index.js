@@ -33,6 +33,7 @@ const MySlice = ({ slice, background, position }) => {
                 width={slice.primary.image.dimensions.width}
                 height={slice.primary.image.dimensions.height}
                 className="mx-auto"
+                alt={slice.primary.image.alt}
               />
             </div>
           )}
