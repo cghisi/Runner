@@ -57,18 +57,16 @@ class MobileNavigation extends Component {
 
             {menu.map((menuLink, index) => (
               <span
-                className="flex items-center p-4 hover:bg-indigo-500 border-gray-300 border-b"
+                className="flex items-center p-4 text-medium hover:bg-indigo-500 border-gray-300 border-b"
                 key={index}
               >
                 <Link link={menuLink.link}>
-                  <a className="text-black link-navigation">
-                    {RichText.asText(menuLink.label)}
-                  </a>
+                  {RichText.asText(menuLink.label)}
                 </Link>
               </span>
             ))}
-            <span className="flex items-center p-4 hover:bg-indigo-500 border-gray-300 border-b">
-              <a className="text-black link-navigation">Join Now</a>
+            <span className="flex items-center p-4 hover:bg-indigo-500 border-gray-300 border-b text-medium ">
+              <a>Join Now</a>
             </span>
           </aside>
         </nav>

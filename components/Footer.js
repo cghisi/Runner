@@ -30,7 +30,7 @@ export const Social = () => {
   return (
     <div className="md:w-1/4 my-5">
       <h3>Social</h3>
-      <ul className="text-white py-2">
+      <ul className="text-white py-3">
         <li className="mx-5 py-1">
           <NextLink href={"/"} passHref>
             <a>Twitter</a>
@@ -66,14 +66,14 @@ export const Footer = ({ backgroundColor, menu }) => {
           <div className="md:w-1/4 my-5">
             <h3 className="font-medium">Menu</h3>
             {menu ? (
-              <ul className="text-white py-2 font-normal">
+              <ul className="text-white py-3 font-normal">
                 <Navigation
                   menuLinks={menu.data.menu_links}
                   direction="block"
                 />
               </ul>
             ) : (
-              <ul className="text-white py-2">
+              <ul className="text-white py-3">
                 <li className="mx-5 link-navigation hover:text-gray-500 py-1">
                   <NextLink href={"/"} passHref>
                     <a>Element 1</a>

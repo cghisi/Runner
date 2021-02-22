@@ -25,7 +25,7 @@ export const Header = ({ backgroundColor, menu }) => {
         </div>
         <div className="hidden md:flex justify-center items-center py-6 md:w-3/5 sm:w-1/3">
           {menu ? (
-            <div className="inline-flex font-medium">
+            <div className="inline-flex font-medium main-navigation">
               <Navigation
                 menuLinks={menu.data.menu_links}
                 direction="inline-flex"
