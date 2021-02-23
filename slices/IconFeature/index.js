@@ -41,7 +41,7 @@ const MySlice = ({ slice, background, columns }) => {
                   </div>
                 )}
                 {item.caption && (
-                  <div className="m-5">
+                  <div className="m-5 font-medium">
                     <RichText render={item.caption} />
                   </div>
                 )}

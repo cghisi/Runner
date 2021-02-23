@@ -42,15 +42,23 @@ class MySlice extends Component {
       slides = this.props.slidesToShow;
     }
 
+    /**
+     * this methodology needs to be updated for better performnce
+     */
     let dotsDisplay = true;
-    if (this.props.dots) {
-      dotsDisplay = this.props.dots;
+    if (this.props.dotsDisplay) {
+      dotsDisplay = this.props.dotsDisplay;
     }
 
+    /**
+     * this methodology needs to be updated for better performnce
+     */
     let autoplayDisplay = false;
     if (this.props.autoplay) {
       autoplayDisplay = this.props.autoplay;
     }
+
+    console.log(this.dotsDisplay);
 
     const settings = {
       dots: dotsDisplay,

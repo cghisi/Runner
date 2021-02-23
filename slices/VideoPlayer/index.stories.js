@@ -12,11 +12,11 @@ mocks.forEach((variation) => {
           description: "Select the background color",
           control: "color",
         },
-        Autoplay: {
+        autoplay: {
           description: "Enable/disable autoplay on your video",
           type: "boolean",
         },
-        Loop: {
+        loop: {
           description: "Enable/disable loop on your video",
           type: "boolean",
         },
