@@ -16,12 +16,12 @@ const MySlice = ({ slice, autoplay, loop, background }) => {
   }
 
   let loopVideo = true;
-  if (loop) {
+  if (loop != null) {
     loopVideo = loop;
   }
 
   let autoplayVideo = true;
-  if (autoplay) {
+  if (autoplay != null) {
     autoplayVideo = autoplay;
   }
 

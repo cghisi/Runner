@@ -46,19 +46,17 @@ class MySlice extends Component {
      * this methodology needs to be updated for better performnce
      */
     let dotsDisplay = true;
-    if (this.props.dotsDisplay) {
-      dotsDisplay = this.props.dotsDisplay;
+    if (this.props.dots != null) {
+      dotsDisplay = this.props.dots;
     }
 
     /**
      * this methodology needs to be updated for better performnce
      */
     let autoplayDisplay = false;
-    if (this.props.autoplay) {
+    if (this.props.autoplay != null) {
       autoplayDisplay = this.props.autoplay;
     }
-
-    console.log(this.dotsDisplay);
 
     const settings = {
       dots: dotsDisplay,
