@@ -21,15 +21,17 @@ const Layout = ({ menu, children }) => {
         />
         <link
           rel="preload"
-          href="/fonts/Poppins-Regular.ttf"
+          href="/fonts/Poppins-Regular.woff"
           as="font"
-          crossOrigin=""
+          type="font/woff"
+          crossorigin="anonymous"
         />
         <link
           rel="preload"
-          href="/fonts/Poppins-Medium.ttf"
+          href="/fonts/Poppins-Medium.woff"
           as="font"
-          crossOrigin=""
+          type="font/woff"
+          crossorigin="anonymous"
         />
       </Head>
       <Header

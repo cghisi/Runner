@@ -35,7 +35,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("/fonts/Poppins-Regular.ttf") format("truetype");
+  src: url("/fonts/Poppins-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -43,7 +43,7 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("/fonts/Poppins-Medium.ttf") format("truetype");
+  src: url("/fonts/Poppins-Medium.woff") format("woff");
 }
 
 /**
