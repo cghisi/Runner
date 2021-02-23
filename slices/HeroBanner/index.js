@@ -4,8 +4,6 @@ import { RichText } from "prismic-reactjs";
 import Image from "next/image";
 import { Button } from "../../components/Button";
 
-import { structuredTextPropTypes, background } from "../../utils/prop-types";
-
 const MySlice = ({ slice, background, position }) => {
   let bgColor = slice.primary.background;
   if (background) {
