@@ -19,7 +19,7 @@ const Layout = ({ menu, children }) => {
           name="description"
           content="Start running, earn rewards. Add more to your running schedule with RUNNING"
         />
-        <link
+        {/* <link
           rel="preload"
           href="/fonts/Poppins-Regular.woff"
           as="font"
@@ -32,7 +32,7 @@ const Layout = ({ menu, children }) => {
           as="font"
           type="font/woff"
           crossorigin
-        />
+        /> */}
       </Head>
       <Header
         //altLangs={altLangs}

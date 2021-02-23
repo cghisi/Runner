@@ -50,7 +50,6 @@ const MySlice = ({ slice, autoplay, loop, background }) => {
               controls={false}
               playing={autoplayVideo}
               muted={true}
-              pip={false}
               width="100%"
               height="100%"
               loop={loopVideo}
