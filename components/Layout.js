@@ -24,14 +24,14 @@ const Layout = ({ menu, children }) => {
           href="/fonts/Poppins-Regular.woff"
           as="font"
           type="font/woff"
-          crossorigin="anonymous"
+          crossorigin
         />
         <link
           rel="preload"
           href="/fonts/Poppins-Medium.woff"
           as="font"
           type="font/woff"
-          crossorigin="anonymous"
+          crossorigin
         />
       </Head>
       <Header
