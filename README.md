@@ -12,27 +12,27 @@ RUNNER is a dev website created using Prismic.io, slices builder, storybook and 
 
 ### Slices
 
-* HeroBanner
-* CardItems
-* IconFeature
-* ImageSlider
-* InfoSection
-* TextImage
-*  VideoPlayer
+- HeroBanner
+- CardItems
+- IconFeature
+- ImageSlider
+- InfoSection
+- TextImage
+- VideoPlayer
 
 ### Components
 
-* Header
-* Footer
-* Button
+- Header
+- Footer
+- Button
 
 ### The Contest
 
-* [✓] My library contains at least 5 different slices
-* [✓] I have updated the LICENSE to credit myself for my library
-* [✓] The Storybook documentation is hosted here: https://runner-app-sb.netlify.app
-* [✓] The showcase website is fun and hosted here: https://runner-app.vercel.app
-* [✓] My library does not contain any non-public licensed assets
+- [✓] My library contains at least 5 different slices
+- [✓] I have updated the LICENSE to credit myself for my library
+- [✓] The Storybook documentation is hosted here: https://runner-app-sb.netlify.app
+- [✓] The showcase website is fun and hosted here: https://runner-app.vercel.app
+- [✓] My library does not contain any non-public licensed assets
 
 ### Getting Started
 
@@ -55,3 +55,9 @@ npm run storybook
 ### Read More
 
 Read more about [nextJS](https://nextjs.org/). Read more about [Slice Machine](https://www.slicemachine.dev/)
+
+### Licensing
+
+The images used are downloaded from [burst](https://burst.shopify.com/) and [burst](https://unsplash.com/)
+The illustrations are downloaded from [undraw](https://undraw.co/)
+The icons are downloader from [icons8](https://icons8.com/) and [icons8 Licensing](https://icons8.github.io/icons8-docs/web-app/licensing/)

@@ -90,6 +90,20 @@ export const Footer = ({ backgroundColor, menu }) => {
           <Social />
           <Newsletter />
         </div>
+        <div className="font-normal text-xs mx-5">
+          <span>
+            Site designed by
+            <a className="text-blue-700 mx-2" href="https://soghisi.com">
+              Christophe Ghisi
+            </a>
+          </span>
+          <span>
+            - Icons app by
+            <a className="text-blue-700 mx-2" href="https://icons8.com">
+              Icons 8
+            </a>
+          </span>
+        </div>
       </div>
     </footer>
   );
