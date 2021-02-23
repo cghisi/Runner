@@ -1,6 +1,6 @@
 ![alt text][logo]
 
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+[logo]: https://github.com/cghisi/Runner/blob/main/public/RUNNER_app.png "RUNNER App"
 
 # Runner App - A new way to deliver
 
