@@ -21,7 +21,7 @@ const MySlice = ({ slice, autoplay, loop, background }) => {
   }
 
   let autoplayVideo = true;
-  if (autoplayVideo) {
+  if (autoplay) {
     autoplayVideo = autoplay;
   }
 
