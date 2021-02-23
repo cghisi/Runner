@@ -8,35 +8,27 @@ RUNNER is a dev website created using Prismic.io, slices builder, storybook and 
 
 ### Slices
 
-#### HeroBanner
-
-#### CardItems
-
-#### IconFeature
-
-#### ImageSlider
-
-#### InfoSection
-
-#### TextImage
-
-#### VideoPlayer
+* HeroBanner
+* CardItems
+* IconFeature
+* ImageSlider
+* InfoSection
+* TextImage
+*  VideoPlayer
 
 ### Components
 
-#### Header
-
-#### Footer
-
-#### Button
+* Header
+* Footer
+* Button
 
 ### The Contest
 
-⋅⋅* [✓] My library contains at least 5 different slices
-⋅⋅* [✓] I have updated the LICENSE to credit myself for my library
-⋅⋅* [✓] The Storybook documentation is hosted here: https://runner-app-sb.netlify.appetlify.app
-⋅⋅* [✓] The showcase website is fun and hosted here: https://runner-app.vercel.app
-⋅⋅\* [✓] My library does not contain any non-public licensed assets
+* [✓] My library contains at least 5 different slices
+* [✓] I have updated the LICENSE to credit myself for my library
+* [✓] The Storybook documentation is hosted here: https://runner-app-sb.netlify.appetlify.app
+* [✓] The showcase website is fun and hosted here: https://runner-app.vercel.app
+* [✓] My library does not contain any non-public licensed assets
 
 ### Getting Started
 
