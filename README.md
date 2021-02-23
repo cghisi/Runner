@@ -58,7 +58,7 @@ Read more about [nextJS](https://nextjs.org/). Read more about [Slice Machine](h
 
 ### Licensing
 
-The images used are downloaded from [burst](https://burst.shopify.com/) and [burst](https://unsplash.com/)
+The images used are downloaded from [burst](https://burst.shopify.com/) and [Unsplash](https://unsplash.com/)
 
 The illustrations are downloaded from [undraw](https://undraw.co/)
 
