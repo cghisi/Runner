@@ -1,0 +1,70 @@
+{
+  "id": "hero_banner",
+  "type": "SharedSlice",
+  "name": "Slices/HeroBanner",
+  "description": "HeroBanner",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "HeroBanner",
+      "primary": {
+        "title": {
+          "config": {
+            "label": "Heading",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "heading1"
+          },
+          "type": "StructuredText"
+        },
+        "subtitle": {
+          "config": {
+            "label": "Sub Heading",
+            "placeholder": "A nice description of your feature",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          },
+          "type": "StructuredText"
+        },
+        "image": {
+          "config": {
+            "label": "",
+            "constraint": {
+              "width": 700,
+              "height": 500
+            },
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "background": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Color"
+        },
+        "ctaLabel": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "ctaLink": {
+          "type": "Link",
+          "config": {
+            "label": "",
+            "id": "ctaLink",
+            "placeholder": "",
+            "allowTargetBlank": true
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

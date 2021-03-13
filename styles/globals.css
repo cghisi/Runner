@@ -1,0 +1,126 @@
+/**
+  tailwind loader
+**/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply text-base !important;
+  }
+  h1 {
+    margin: 0px !important;
+  }
+  h2 {
+    @apply text-4xl;
+  }
+  h3 {
+    @apply text-base;
+    @apply font-medium;
+  }
+  a {
+    @apply text-blue-600 underline;
+  }
+  strong {
+    @apply font-medium;
+  }
+}
+
+/**
+  Font configuration
+**/
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/Poppins-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/Poppins-Medium.woff") format("woff");
+}
+
+/**
+  Default page configuration
+**/
+html,
+body {
+  font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/**
+  Button configuration
+**/
+.btn--small {
+  @apply text-base;
+}
+
+.btn--large {
+  @apply text-xl;
+}
+
+/**
+  Video player
+**/
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/**
+  navigation configuration
+**/
+.main-navigation .link-navigation {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+.main-navigation .link-navigation {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+.main-navigation .link-navigation:hover {
+  color: #000;
+}
+
+.main-navigation .link-navigation::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.main-navigation .link-navigation:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}

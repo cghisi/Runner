@@ -1,0 +1,29 @@
+[
+    {
+        "id": "default-slice",
+        "name": "Default slice",
+        "docURL": "...",
+        "version": "sktwi1xtmkfgx8626",
+        "description": "VideoPlayer",
+        "primary": {
+            "title": [
+                {
+                    "type": "heading2",
+                    "text": "brand leading-edge infomediaries",
+                    "spans": []
+                }
+            ],
+            "description": [
+                {
+                    "type": "paragraph",
+                    "text": "Sint Lorem elit cillum sint ex ipsum laboris quis tempor.",
+                    "spans": []
+                }
+            ],
+            "video": "https://vimeo.com/514062132",
+            "background": "#dde6ec"
+        },
+        "items": [],
+        "slice_type": "video_player"
+    }
+]

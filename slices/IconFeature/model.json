@@ -1,0 +1,62 @@
+{
+  "id": "icon_feature",
+  "type": "SharedSlice",
+  "name": "Slices/IconFeature",
+  "description": "IconFeature",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "IconFeature",
+      "primary": {
+        "title": {
+          "config": {
+            "label": "Title",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          },
+          "type": "StructuredText"
+        },
+        "background": {
+          "type": "Color",
+          "config": {
+            "label": "",
+            "id": "background",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "image": {
+          "config": {
+            "label": "",
+            "constraint": {
+              "width": 80,
+              "height": 80
+            },
+            "thumbnails": [
+              {
+                "name": "mobile",
+                "width": 50,
+                "height": 50
+              }
+            ]
+          },
+          "type": "Image"
+        },
+        "caption": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading4"
+          },
+          "type": "StructuredText"
+        }
+      }
+    }
+  ]
+}
